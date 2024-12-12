@@ -1,15 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+	--color_fondo:#cf30df;
+	--color_contraste: #ffffff;
+}
 *{
 	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	color: var(--color_contraste);
+	transition: ease all .1s;
 }
 body{
-	background-color: #cf30df;
+	background-color: var(--color_fondo);
 	margin: 0;
-	padding: 20px;
+	padding: 0;
 	height: 100svh;
+	width: 100%;
 }
 div.contenido{
-	background-color: aqua;
 	margin: 0 auto;
 	height: 100%;
-	width: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	max-width: 600px;
+	padding: 0 10px;
+}
+div.contenido>*{
+	width: 100%;
+}
+div.logo{
+	aspect-ratio: 1;
+	background-image: url('./imgs/nadamas.jpg');
+	background-size: contain;
+	width: 150px;
+	border-radius: 50%;
+	margin-top: 100px;
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0;
+
+}
+h2{
+	margin: 0;
+	text-align: center;
+}
+.contacto{
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 20px 0;
+}
+.contacto a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	width: 50px;
+	aspect-ratio: 1;
+}
+.contacto i{
+	font-size: 32px;
+}
+.contacto a:hover i{
+	font-size: 36px;
+}
+.contenido>a{
+	background-color: var(--color_fondo);
+	color: var(--color_contraste);
+	width: 100%;
+	border: solid 1px var(--color_contraste);
+	text-decoration: none;
+	padding: 10px;
+	min-height: 70px;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.contenido>a:hover{
+	background-color: var(--color_contraste);
+	color: var(--color_fondo);
 }
