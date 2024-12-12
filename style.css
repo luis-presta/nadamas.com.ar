@@ -1,0 +1,15 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #cf30df;
+	margin: 0;
+	padding: 20px;
+	height: 100svh;
+}
+div.contenido{
+	background-color: aqua;
+	margin: 0 auto;
+	height: 100%;
+	width: 50%;
+}
